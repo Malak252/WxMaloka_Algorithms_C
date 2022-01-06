@@ -24,7 +24,7 @@ void Freaking_function( int x[126])
         }
         else
         {
-            printf("don't cry we can't find it")
+            printf("don't cry we can't find it");
         }
     }
 }
