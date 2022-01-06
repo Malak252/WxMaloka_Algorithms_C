@@ -43,37 +43,12 @@ int main()
   //printf("\n DATA STORED: \n");
   //ARR_DATA_OUT(DATA_BASE);
 
-  printf("\n");
+    printf("\n");
 
-   printf("It's not my fault");
-   return 0;
+
+    printf("\nIt's not my fault");
+    return 0;
 }
-#include <stdio.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <unistd.h>
-#include <windows.h>
-#include <stdbool.h>
-#include <string.h>
-//=====================================
-
-// IMPORTANT KEYBOARD KEYS(ASCII):
-// BACKSPACE:
-#define BKSP 8
-// ENTER:
-#define ENTER 13
-// ESCAPE:
-#define ESC 27
-// SPACE:
-#define SPACE 32
-// TAB:
-#define TAB 9
-//=====================================
-void ARR_DATA_IN(uint16_t *);
-void ARR_DATA_OUT(uint16_t *);
-
-#define MAX_DATA 100
 
 
 // Function to input random numbers using rand() function:
@@ -120,5 +95,12 @@ void Freaking_function( int x[126])
       printf("\n\ndon't cry we can't find it");
     }
 }
+
+
+
+
+
+
+
 
 
