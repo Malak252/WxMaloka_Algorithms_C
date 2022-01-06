@@ -20,7 +20,7 @@ void Freaking_function( int x[126];)
     {
         if(x[i]==Data)
         {
-            printf("nehahaha data found");
+            printf("nehahaha data is found");
         }
         else
         {
