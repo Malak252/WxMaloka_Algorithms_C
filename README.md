@@ -1,1 +1,1 @@
-# WxMaloka_Playing
+# WxMaloka_Algorithms
