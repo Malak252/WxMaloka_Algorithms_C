@@ -22,13 +22,14 @@
 //=====================================
 void ARR_DATA_IN(uint16_t *);
 void ARR_DATA_OUT(uint16_t *);
-bool LSA(uint16_t *, uint16_t );
 
-// Large set of data
-#define MAX_DATA 50000
+#define MAX_DATA 100
 
-int main(void)
+void Freaking_function(int x[12]);
+
+int main()
 {
+
   system("COLOR 0D");
 
   uint16_t DATA_BASE[MAX_DATA] = {0};
@@ -36,75 +37,61 @@ int main(void)
 
   // Input random data for testing purposes
   ARR_DATA_IN(DATA_BASE);
+  Freaking_function(DATA_BASE);
 
-  //TESTING PURPOSE:
+  // TESTING PURPOSE:
   //printf("\n DATA STORED: \n");
   //ARR_DATA_OUT(DATA_BASE);
 
-  printf("\n \nEnter number to search: ");
-  scanf("%d", (uint32_t *) &SEARCH_SAMPLE);
-
-  printf("\n\n");
-
-  printf("\n Searching...\n");
-  if(LSA(DATA_BASE, SEARCH_SAMPLE))
-  {
-    printf("\n Data found successfully!\n");
-  }
-  else
-  {
-    printf("\n Data cannot be found!\n");
-  }
+    printf("\n");
 
 
-  printf("\n");
-  return 0;
+    printf("\nIt's not my fault");
+    return 0;
 }
 
 
 // Function to input random numbers using rand() function:
 void ARR_DATA_IN(uint16_t *ptr)
 {
-  for(uint16_t i = 0; (i < MAX_DATA); i++)
+  for(uint8_t i = 0; (i < MAX_DATA); i++)
   {
-    ptr[i] = rand()%255;
+    ptr[i] = rand()%150;
   }
 }
 
 // Function to output the data stored.
 void ARR_DATA_OUT(uint16_t *ptr)
 {
-  for(uint16_t i = 0; (i < MAX_DATA); i++)
+  for(uint8_t i = 0; (i < MAX_DATA); i++)
   {
     printf("%d ", ptr[i]);
   }
 }
 
-bool LSA(uint16_t *ptr, uint16_t sample)
+void Freaking_function( int x[126])
 {
-  uint8_t state = 0;
+    int Data;
+    bool result= false;
 
-  for(uint16_t i = 0; (i < MAX_DATA); i++)
-  {
-    if(sample == ptr[i])
-    {
-      printf("\n (%d) Found at index (%d)! \n", sample, i);
-      state = 0;
-      break;
-    }
-    else if(i == (MAX_DATA-1))
-    {
-      state = 1;
-      break;
-    }
-  }
 
-  if(state == 0)
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
+    for(int i=0;i<126;i++)
+    {
+        if(x[i]==Data)
+        {
+            result= true;
+        }
+        else
+        {
+            result= false;
+        }
+    }
+    if(result==true)
+    {
+      printf("\n\nnehahaha data found");
+    }
+    else
+    {
+      printf("\n\ndon't cry we can't find it");
+    }
 }
