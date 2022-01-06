@@ -44,10 +44,9 @@ int main()
   //ARR_DATA_OUT(DATA_BASE);
 
   printf("\n");
-  return 0;
 
-    printf("It's not my fault");
-    return 0;
+   printf("It's not my fault");
+   return 0;
 }
 #include <stdio.h>
 #include <stdint.h>
