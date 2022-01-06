@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void Freaking_function(int x[126],bool result);
+void Freaking_function(int x[126]);
 
 int main()
 {
