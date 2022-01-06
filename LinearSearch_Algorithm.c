@@ -24,7 +24,8 @@ void ARR_DATA_IN(uint16_t *);
 void ARR_DATA_OUT(uint16_t *);
 bool LSA(uint16_t *, uint16_t );
 
-#define MAX_DATA 255
+// Large set of data
+#define MAX_DATA 50000
 
 int main(void)
 {
@@ -83,7 +84,7 @@ bool LSA(uint16_t *ptr, uint16_t sample)
 {
   uint8_t state = 0;
 
-  for(uint8_t i = 0; (i < MAX_DATA); i++)
+  for(uint16_t i = 0; (i < MAX_DATA); i++)
   {
     if(sample == ptr[i])
     {
